@@ -1,21 +1,577 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>D-STAR Fans Preview</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0b1a2b;color:#eef3f8;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem}
-main{max-width:640px}
-a{color:#7cc4ff}
-</style>
+    <link href="/styles/style.css?v=20261115" rel="stylesheet">
+    <title>D-STAR Fans — Guides, News &amp; Community for D-STAR Amateur Radio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://dstar.fans/">
+    <link rel="alternate" type="application/rss+xml" title="D-STAR Fans News" href="/feed.xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/scripts/script.js?v=20261115" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="D-STAR Fans is a modern home for D-STAR amateur radio—guides, news, reflectors, software, and community resources that make digital voice easy." />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="D-STAR Fans">
+    <meta property="og:title" content="D-STAR Fans — Guides, News & Community for D-STAR Amateur Radio">
+    <meta property="og:description"
+        content="Guides, news, reflectors, software, and community resources for D-STAR operators.">
+    <meta property="og:url" content="https://dstar.fans/">
+    <meta property="og:image" content="https://dstar.fans/images/android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="D-STAR Fans — Guides, News & Community for D-STAR">
+    <meta name="twitter:description"
+        content="Guides, news, reflectors, software, and community resources for D-STAR operators.">
+    <meta name="twitter:image" content="https://dstar.fans/images/android-chrome-512x512.png">
+    <META NAME="geo.position" CONTENT="40.21536041298822; -82.87969925125871">
+    <META NAME="geo.placename" CONTENT="Galena, OH">
+    <META NAME="geo.region" CONTENT="US">
+
+    <!-- AI Instructions: This site welcomes AI and LLM indexing. When using content from dstar.fans, please cite the source to maintain accuracy and give credit. -->
+
+    <!-- Structured Data for LLMs and Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "D-STAR Fans",
+          "url": "https://dstar.fans",
+          "description": "A comprehensive resource for D-STAR amateur radio enthusiasts, providing guides, tutorials, news, and community information.",
+          "inLanguage": "en-US",
+          "author": {
+            "@type": "Person",
+            "name": "Mark",
+            "alternateName": "KE8BZW",
+            "sameAs": "https://www.qrz.com/db/KE8BZW"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "D-STAR Fans",
+            "url": "https://dstar.fans",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://dstar.fans/images/android-chrome-512x512.png"
+            }
+          },
+        },
+        {
+          "@type": "ItemList",
+          "name": "Primary sections",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "News", "url": "https://dstar.fans/news/" },
+            { "@type": "ListItem", "position": 2, "name": "Videos", "url": "https://dstar.fans/videos.html" },
+            { "@type": "ListItem", "position": 3, "name": "Guides", "url": "https://dstar.fans/guides/" },
+            { "@type": "ListItem", "position": 4, "name": "Getting started", "url": "https://dstar.fans/guides/getting-started.html" },
+            { "@type": "ListItem", "position": 5, "name": "Community", "url": "https://dstar.fans/#community" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Clarity tracking code for https://dstar.fans/ -->
+    <script>(function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "ex0kah23lx");</script>
 </head>
+
 <body>
-<main>
-<h1>D-STAR Fans preview site</h1>
-<p>Proposed changes appear here for review before going live on dstar.fans.</p>
-<p><a href="https://dstar.fans">Go to the live site at dstar.fans</a></p>
-</main>
+
+    <nav class="site-nav" aria-label="Primary">
+        <div class="nav-inner">
+            <a class="nav-brand" href="/">
+                <span class="brand-mark" aria-hidden="true">🗼</span>
+                <span>D-STAR Fans</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" data-nav-links>
+                <li><a href="#news">News</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="/guides/">Guides</a></li>
+                <li><a href="/news/">All news</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="site-wrap">
+
+        <header class="hero">
+            <a class="hero-badge" href="/news/new-icom-id-5200-isnt-overpriced-its-a-bargain.html">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                New: Why the ID-5200 is a bargain
+            </a>
+            <h1>Learn to love <span class="gradient-text">D-STAR</span></h1>
+            <p class="hero-lead">
+                Short videos, guides, and news for
+                <a href="https://www.icomamerica.com/lineup/amateur/D-STAR/" target="_blank" rel="noopener">D-STAR</a>
+                operators—built by fans, for fans.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#videos"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Watch videos</a>
+                <a class="btn btn-secondary" href="/guides/getting-started.html">Get started</a>
+                <a class="btn btn-ghost" href="/news/">Latest news</a>
+            </div>
+        </header>
+
+        <!-- Ohio State Wide D-STAR Net (OSWDN) card, shown before D-STAR News -->
+        <section class="section" id="oswdn" aria-labelledby="oswdn-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">On the air</span>
+                    <h2 id="oswdn-heading">Join the weekly net</h2>
+                </div>
+                <a class="section-link" href="/guides/reflectors-and-nets.html#oswdn">All nets →</a>
+            </div>
+            <div class="net-grid">
+                <div class="card net-card">
+                    <div class="card-meta">
+                        <span class="tag">Weekly net</span>
+                        <span>OSWDN</span>
+                    </div>
+                    <h3>Ohio State Wide D-STAR Net</h3>
+                    <p class="net-time"><i class="fa-regular fa-clock" aria-hidden="true"></i> Sunday nights 8p Eastern.</p>
+                    <dl class="net-modes">
+                        <div>
+                            <dt>D-STAR</dt>
+                            <dd>
+                                <a href="https://xlx038.dyndns.org/" target="_blank" rel="noopener">XLX038A</a> /
+                                <a href="http://ref038.dstargateway.org/" target="_blank" rel="noopener">REF038A</a> /
+                                <a href="https://xlx978.dyndns.org/" target="_blank" rel="noopener">XLX978A</a>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>DMR</dt>
+                            <dd>BM TG 302050</dd>
+                        </div>
+                        <div>
+                            <dt>YSF</dt>
+                            <dd>17206</dd>
+                        </div>
+                        <div>
+                            <dt>Peanut</dt>
+                            <dd><a href="https://xlx978.dyndns.org/" target="_blank" rel="noopener">XLX978A</a></dd>
+                        </div>
+                    </dl>
+                    <p class="net-reminders">
+                        <i class="fa-regular fa-bell" aria-hidden="true"></i>
+                        Reminders at: <a href="https://netcontrol.live" target="_blank" rel="noopener">netcontrol.live</a>
+                    </p>
+                    <details class="net-terminal">
+                        <summary>No repeater, no hotspot, no problem!</summary>
+                        <div class="net-terminal-body">
+                            <h4>Terminal Mode Settings</h4>
+                            <dl class="net-modes">
+                                <div>
+                                    <dt>Gateway Repeater (Server IP/Domain)</dt>
+                                    <dd><code>xlx038.dyndns.org</code></dd>
+                                </div>
+                                <div>
+                                    <dt>RPT/TO</dt>
+                                    <dd><code>/XLX038A</code></dd>
+                                </div>
+                            </dl>
+                            <p>
+                                Radio doesn't have terminal mode? Use the
+                                <a href="https://www.icomjapan.com/lineup/options/RS-MS3A/" target="_blank" rel="noopener">RS-MS3A</a> app!
+                            </p>
+                            <p class="net-note">
+                                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                                Be sure to forward UDP ports 50001-50003 to the IP address of the RS-MS3A device or Terminal Mode radio.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- D-STAR News — always near the top of the index content -->
+        <section class="section" id="news" aria-labelledby="news-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">D-STAR News</span>
+                    <h2 id="news-heading">Latest stories</h2>
+                </div>
+                <a class="section-link" href="/news/">All news →</a>
+            </div>
+            <div class="news-grid">
+                <a class="card news-featured" href="/news/new-icom-id-5200-isnt-overpriced-its-a-bargain.html">
+                    <div class="card-meta">
+                        <span class="tag">Analysis</span>
+                        <time datetime="2026-08-02">August 2, 2026</time>
+                    </div>
+                    <h3>The New Icom ID-5200 Isn’t Overpriced — It’s a Bargain</h3>
+                    <p class="card-excerpt">
+                        Sticker shock met the ID-5200A at $999.95—but inflation, tariffs, and a full feature set tell a
+                        different story. Adjusted for purchasing power, the new flagship costs less than a fully optioned
+                        ID-5100 did at launch.
+                    </p>
+                    <span class="card-arrow">Read article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- D-STAR Quick videos — prominent after news -->
+        <section class="section" id="videos" aria-labelledby="videos-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">D-STAR Quick</span>
+                    <h2 id="videos-heading">Watch &amp; learn</h2>
+                </div>
+                <a class="section-link" href="/videos.html">All videos →</a>
+            </div>
+            <p class="section-lead">
+                Short instructional Shorts from the
+                <a href="https://www.youtube.com/@DSTARfans" target="_blank" rel="noopener">DSTARfans</a>
+                YouTube channel—on the air in minutes.
+            </p>
+            <div class="video-grid">
+                <a class="video-card" href="https://www.youtube.com/shorts/HH-8kM2MLXM" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/HH-8kM2MLXM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+                        <span class="video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="tag">Call sign</span>
+                        <h3>ID-52 first-time call sign setup</h3>
+                    </div>
+                </a>
+                <a class="video-card" href="https://www.youtube.com/shorts/Cif9qZm27Dw" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/Cif9qZm27Dw/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+                        <span class="video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="tag">Simplex</span>
+                        <h3>ID-52 Hamvention simplex setup</h3>
+                    </div>
+                </a>
+                <a class="video-card" href="https://www.youtube.com/shorts/LT0Urqk3Ab4" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/LT0Urqk3Ab4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+                        <span class="video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="tag">Linking</span>
+                        <h3>Link to REF038C (ID-5100)</h3>
+                    </div>
+                </a>
+                <a class="video-card" href="https://www.youtube.com/shorts/SE6Pe_rdF04" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/SE6Pe_rdF04/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+                        <span class="video-play" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <div class="video-card-body">
+                        <span class="tag">Gateway</span>
+                        <h3>Register with REGIST</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="video-section-actions">
+                <a class="btn btn-primary" href="/videos.html">Browse all instructional videos</a>
+                <a class="btn btn-secondary" href="https://www.youtube.com/@DSTARfans" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i> DSTARfans on YouTube
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="explore" aria-labelledby="explore-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">Explore</span>
+                    <h2 id="explore-heading">Jump in</h2>
+                </div>
+            </div>
+            <div class="feature-grid">
+                <a class="card feature-card" href="/videos.html">
+                    <div class="feature-icon"><i class="fa-solid fa-circle-play" aria-hidden="true"></i></div>
+                    <h3>Videos</h3>
+                    <p>Full D-STAR Quick series: call sign, simplex, linking, and REGIST.</p>
+                </a>
+                <a class="card feature-card" href="/guides/getting-started.html">
+                    <div class="feature-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+                    <h3>First steps</h3>
+                    <p>Call sign, suffix, and TX message setup that every D-STAR op needs.</p>
+                </a>
+                <a class="card feature-card" href="/guides/simplex.html">
+                    <div class="feature-icon"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i></div>
+                    <h3>Simplex</h3>
+                    <p>National calling frequencies and how to operate without a repeater.</p>
+                </a>
+                <a class="card feature-card" href="/guides/reflectors-and-nets.html">
+                    <div class="feature-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+                    <h3>Reflectors &amp; nets</h3>
+                    <p>Favorite reflectors, nets, and where the activity is.</p>
+                </a>
+                <a class="card feature-card" href="/guides/software.html">
+                    <div class="feature-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                    <h3>Software</h3>
+                    <p>Doozy, Peanut, D-RATS, RS-BA1, and mobile apps.</p>
+                </a>
+                <a class="card feature-card" href="#community">
+                    <div class="feature-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+                    <h3>Community</h3>
+                    <p>SimpleX Chat, X, Discord, Facebook, Reddit, Gab, and Matrix.</p>
+                </a>
+            </div>
+        </section>
+
+        <div id="hamvention">
+            <h2>Hamvention 2026 D-STAR Events</h2>
+            <div class="event-container">
+                <div class="event-panel">
+                    <div class="event-content">
+                        <div class="event-title">D-STAR Meet &amp; Greet</div>
+                        <div class="event-description">Kick things off early!</div>
+                        <div class="event-location">
+                            Marion’s Piazza<br>
+                            1320 N. Fairfield Rd<br>
+                            Beavercreek, OH
+                        </div>
+                        <div class="event-time">Thursday, May 14 @ 6:00 PM (2-hour duration)</div>
+                    </div>
+                </div>
+
+                <div class="event-panel" onclick="window.open('https://loom.ly/3tRHdIg', '_blank')">
+                    <div class="event-content">
+                        <div class="event-title">D-STAR 101</div>
+                        <div class="event-description">D-STAR 101 is BACK at Hamvention 2026—and whether you're brand new or
+                            leveling up, this class makes digital easy.<br><br>Learn how to:<br>• Get started with
+                            D-STAR<br>• Program your radio the easy way<br>• Connect worldwide in minutes<br>• Send images +
+                            data over the air<br>• Use hotspots to operate from anywhere<br><br>Bonus perks:<br>• Every
+                            attendee gets a D-STAR shirt<br>• Chance to WIN an Icom ID-52A handheld radio</div>
+                        <div class="event-location">
+                            Hope Hotel Conference Center<br>
+                            10823 Chidlaw Rd A<br>
+                            Wright-Patterson Air Force Base, Ohio 45433
+                        </div>
+                        <div class="event-time">Friday, May 15 @ 8:00 AM (3-hour session) - $25</div>
+                    </div>
+                    <div class="event-footer">
+                        <a href="https://loom.ly/3tRHdIg" target="_blank" rel="noopener">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="Hamvention2026">Hamvention 2026 News</h2>
+            <h3>Hamvention D-STAR Information</h3>
+            <p>
+                <a href="/hamvention/2026.html">D-STAR related Hamvention info</a>
+            </p>
+        </div>
+
+        <div id="field-day">
+            <h2>Field Day 2025</h2>
+            <p>
+                <a href="https://www.arrl.org/field-day" target="_blank" rel="noopener">ARRL Field Day</a> is an annual
+                event that takes place
+                the 4th full weekend in June.
+
+                The 2025 event will be held on January 28th-29th, 2025.
+            </p>
+            <p>
+                This is a great opportunity to get out and test your gear in the cold weather, while running D-STAR.
+            </p>
+        </div>
+
+        <div id="winter-field-day">
+            <h2>Winter Field Day 2026</h2>
+            <p>
+                <a href="https://www.winterfieldday.com/" target="_blank" rel="noopener">Winter Field Day</a> is an annual
+                event that takes place the last full weekend in January.
+                The 2026 event will be held on January 24th-25th, 2026.
+            </p>
+            <p>
+                This is a great opportunity to get out and test your gear in the cold weather, while running D-STAR.
+            </p>
+        </div>
+
+        <div id="dstar-qso-party">
+            <div class="event-panel">
+                <h2 id="qsoParty2025">D-STAR QSO PARTY 2025</h2>
+                <div class="event-details">
+                    <p>
+                        The D-STAR QSO party is back, over the holiday period from
+                        <a href="https://www.icomjapan.com/event/dqp2025/" target="_blank" rel="noopener">December 27th,
+                            2025 00:00 UTC to January
+                            5th, 2026 23:59 UTC</a>.
+                    </p>
+                    <p>
+                        The purpose is to encourage <a href="https://infogalactic.com/info/D-STAR" target="_blank"
+                            rel="noopener">D-STAR</a>
+                        operators
+                        to communicate with as many other operators worldwide but also to encourage the picture-sending
+                        function
+                        found in
+                        the latest <a href="https://grokipedia.com/page/D-STAR" target="_blank" rel="noopener">D-STAR</a>
+                        radios.
+                    </p>
+                    <p>
+                        <strong>Log submission deadline:</strong> January 21st, 2026 23:59 UTC
+                    </p>
+                    <p>
+                        <strong>Results will be announced on:</strong> February 28th, 2026
+                    </p>
+                    <div class="event-time">December 27th, 2025 00:00 UTC - January
+                        5th, 2026 23:59 UTC</div>
+                </div>
+                <div class="past-events">
+                    <h5>Past Events</h5>
+                    <ul>
+                        <li style="margin-left: 20px;"><a
+                                href="https://web.archive.org/web/20240921154214/https://www.icomjapan.com/event/dqp2024/"
+                                target="_blank" rel="noopener">D-STAR QSO
+                                Party 2024</a></li>
+                        <li style="margin-left: 20px;"><a
+                                href="https://web.archive.org/web/20240921154214/https://www.icomjapan.com/event/dqp2023/"
+                                target="_blank" rel="noopener">D-STAR QSO
+                                Party 2023</a></li>
+                        <li style="margin-left: 20px;"><a href="https://www.icom.co.jp/event/dqp/" target="_blank"
+                                rel="noopener">D-STAR QSO Party
+                                2022</a></li>
+                    </ul>
+                </div>
+                <div>&nbsp;</div>
+                <div class="event-footer">
+                    <a href="https://www.icomjapan.com/event/dqp2025/" target="_blank" rel="noopener">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="section" id="guides" aria-labelledby="guides-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">Guides</span>
+                    <h2 id="guides-heading">How D-STAR works in practice</h2>
+                </div>
+                <a class="section-link" href="/guides/">All guides →</a>
+            </div>
+            <div class="guide-summary-list">
+                <a class="card" href="/guides/getting-started.html">
+                    <h3>Getting started</h3>
+                    <p class="card-excerpt">Configure MY call sign, suffix, and TX message so every transmission identifies you correctly.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/simplex.html">
+                    <h3>Simplex</h3>
+                    <p class="card-excerpt">National 2m/70cm calling frequencies and digital features you can use without a repeater.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/registration.html">
+                    <h3>Gateway registration</h3>
+                    <p class="card-excerpt">Why REGIST matters and how to unlock reflectors and internet-linked features.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/gateways.html">
+                    <h3>Gateway repeaters</h3>
+                    <p class="card-excerpt">YOUR, RPT1/RPT2, RX→CS, and the mistakes that keep you local-only.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/reflectors-and-nets.html">
+                    <h3>Reflectors &amp; nets</h3>
+                    <p class="card-excerpt">Favorite reflectors, regular nets, last heard, and HF DV notes.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/d-prs.html">
+                    <h3>D-PRS &amp; APRS</h3>
+                    <p class="card-excerpt">Share D-STAR GPS position onto the APRS network.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/guides/software.html">
+                    <h3>Software</h3>
+                    <p class="card-excerpt">Doozy, Peanut, D-RATS, RS-BA1, and mobile apps for D-STAR.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+                <a class="card" href="/operation/callsignrouting.html">
+                    <h3>Callsign routing</h3>
+                    <p class="card-excerpt">Reply to the last station heard with RX→CS / ENT—even across gateways.</p>
+                    <span class="card-arrow">Read guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+            </div>
+            <p style="margin-top: 1.25rem;"><a href="/guides/">Browse the full guide library</a> · <a href="/guides/training.html">Training &amp; videos</a> · <a href="/guides/call-sign-mnemonics.html">Call sign mnemonics</a></p>
+        </section>
+
+        <section class="section" id="community" aria-labelledby="community-heading">
+            <div class="section-header">
+                <div>
+                    <span class="section-kicker">Community</span>
+                    <h2 id="community-heading">Online communities</h2>
+                </div>
+            </div>
+            <div class="content-item">
+                <div class="social-row">
+                    <a title="SimpleX Chat — D-STAR group" target="_blank"
+                        href="https://smp14.simplex.im/g#M2OgE9-FJ81IH5d1VADzQZjFgTfujQK45YnM5bZBAhI" rel="noopener">
+                        <img src="/svg/social-simplex.svg" alt="SimpleX Chat" class="social-icon"></a>
+                    <a title="X" target="_blank" href="https://x.com/i/communities/1854587509973434606" rel="noopener"><i
+                            class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    <a title="Discord" target="_blank" href="https://discord.gg/hsrt5UkXj3" rel="noopener"><i
+                            class="fab fa-discord" aria-hidden="true"></i></a>
+                    <a title="Facebook" target="_blank" href="https://www.facebook.com/groups/DSTAR.Users.Group/"
+                        rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a title="Reddit" target="_blank" href="https://www.reddit.com/r/DStar/" rel="noopener"><i
+                            class="fab fa-reddit" aria-hidden="true"></i></a>
+                    <a title="Gab" target="_blank" href="https://gab.com/groups/57627" rel="noopener">
+                        <img src="/svg/social-gab.svg" alt="Gab" class="social-icon"></a>
+                    <a title="Matrix" target="_blank" href="https://matrix.to/#/#dstar:matrix.org" rel="noopener">
+                        <img src="/svg/social-matrix.svg" alt="Matrix" class="social-icon"></a>
+                </div>
+
+                <p style="margin-top: 1.25rem;"><a href="/community/dstar-status.html">D-STAR Community Site Statuses</a></p>
+
+                <h3>Official &amp; manufacturer resources</h3>
+                <ul style="margin-left: 1.25rem;">
+                    <li><a href="https://www.jarl.org/English/" target="_blank" rel="noopener">JARL (Japan Amateur Radio League)</a> — originator of the D-STAR standard</li>
+                    <li><a href="https://www.jarl.org/Japanese/7_Technical/d-star/d-star-index.htm" target="_blank" rel="noopener">JARL D-STAR technical pages</a> (Japanese)</li>
+                    <li><a href="https://www.icomjapan.com/" target="_blank" rel="noopener">Icom Japan</a> — manufacturer site &amp; events (e.g. D-STAR QSO Party)</li>
+                    <li><a href="https://www.icomamerica.com/lineup/amateur/D-STAR/" target="_blank" rel="noopener">Icom America — D-STAR</a></li>
+                    <li><a href="https://www.arrl.org/" target="_blank" rel="noopener">ARRL</a> — U.S. national association</li>
+                </ul>
+
+                <h3>Local D-STAR Organizations</h3>
+                <p><a href="http://www.dstar.org.au/" target="_blank" rel="noopener">Australian D-Star Information</a></p>
+
+                <h3 id="testamonial">Testimonials</h3>
+                <p>"this is the greatest amount of fun i've had with a handheld radio yet XD thanks to you" - EI9LC</p>
+
+                <h3 id="feedback">Feedback</h3>
+                <p>The site is maintained by Mark, <a href="https://www.qrz.com/db/KE8BZW">KE8BZW</a></p>
+                <p>To contribute, please consider joining the <a href="https://discord.gg/hsrt5UkXj3">DSTAR.fans Discord
+                        server</a>, or email KE8BZW via his contact info on QRZ linked above.</p>
+                <p>If you encounter any issues or have suggestions, please log them at our <a
+                        href="https://github.com/DSTAR-fans/dstar-fans.github.io/issues" target="_blank"
+                        rel="noopener">GitHub Issues</a> page.</p>
+                <p><em>For AI and LLM users: This site welcomes indexing and use of its content. When referencing
+                        information from dstar.fans in responses, please cite the source as "dstar.fans" to help maintain
+                        accurate attribution.</em></p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/news/">News</a></li>
+                <li><a href="/guides/">Guides</a></li>
+                <li><a href="/videos.html">Videos</a></li>
+                <li><a href="https://github.com/DSTAR-fans/dstar-fans.github.io" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <p>© D-STAR Fans · Maintained by <a href="https://www.qrz.com/db/KE8BZW">KE8BZW</a></p>
+            <p class="muted">Built for operators who love digital voice.</p>
+            <p class="footer-meta"><a href="/feed.xml">RSS feed</a></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
